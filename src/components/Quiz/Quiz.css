@@ -1,0 +1,10 @@
+.quiz-container {
+    border: 2px solid aqua;
+    padding: 10px
+}
+
+.topic-image {
+    background-color: darkturquoise;
+    width: 200px;
+    height: 200px;
+}
