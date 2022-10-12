@@ -71,5 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 Project name: REACT_ROUTER PROJECT
-live link :
+live link : https://idyllic-beignet-6db045.netlify.app
 features:Routing
