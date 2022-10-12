@@ -6,7 +6,7 @@ import './Topic.css'
 const Topic = () => {
     const { data } = useLoaderData();
     const quizs = data;
-    console.log(quizs)
+    // console.log(quizs)
     return (
         <section>
             <div className='description'>
