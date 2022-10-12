@@ -4,6 +4,7 @@ import Main from './components/Layout/Main';
 import Topic from './components/Topic/Topic';
 import Stat from './components/Stat/Stat';
 import Blog from './components/Blog/Blog';
+import Questions from './components/Questions/Questions';
 
 function App() {
   const router = createBrowserRouter([
@@ -24,9 +25,21 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/:id',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <Questions></Questions>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <h1>404:This route not found.</h1>
     }
+
   ])
   return (
     <div className="App">
