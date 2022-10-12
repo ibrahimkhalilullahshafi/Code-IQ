@@ -9,7 +9,7 @@ const Stat = () => {
     const chartData = data;
 
     return (
-        <div> <ResponsiveContainer width="95%" height="100%">
+        <div> <ResponsiveContainer width="95%" height={600} >
             <LineChart
                 width={500}
                 height={300}
