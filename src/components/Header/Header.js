@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <nav>
                 <div>
-                    <img src={process.env.PUBLIC_URL + "Code IQ.png"} alt="" />
+                    <img className='header-logo' src={process.env.PUBLIC_URL + "Code IQ.png"} alt="" />
                 </div>
                 <div className='headings'>
                     <Link className='heading-item' to='/'>Topic</Link>

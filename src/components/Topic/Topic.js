@@ -6,11 +6,12 @@ import './Topic.css'
 const Topic = () => {
     const { data } = useLoaderData();
     const quizs = data;
+    console.log(quizs)
     return (
         <section>
             <div className='description'>
                 <div><img src={process.env.PUBLIC_URL + "coding.png"} alt="" /></div>
-                <div><h2>Want to test your knowledge?</h2><p>Brush up on your coding knowledge with our quiz segment.Check out our online computer programming quizzes to enhance your knowledge, learn new things or prepare for an upcoming test. Made up of well-researched and interesting quiz questions, each and every quiz here can test your awareness and grasp of the subject.</p></div>
+                <div><h2>Want to test your knowledge?</h2><h4>Brush up on your coding knowledge with our quiz segment.Check out our online computer programming quizzes to enhance your knowledge, learn new things or prepare for an upcoming test. Made up of well-researched and interesting quiz questions, each and every quiz here can test your awareness and grasp of the subject.</h4></div>
             </div>
             <div className='topic-container'>
                 {
